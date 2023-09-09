@@ -1,0 +1,42 @@
+Seletores;
+
+seletores em HTML são tags que isolam outras tags de seu grupo para CSS ou JAVASCRIPT
+
+em HTML é id = em CSS é #
+
+em HTML é class = em CSS é .
+
+exemplo id;							exemplo class;
+HTML;								HTML;
+<h1 id="principal">Seletores</h1>				<h1 class="principal">Seletores CSS</h1>	
+				
+<h1>tag id</h1>							<h2> . </h2>
+
+CSS;								<h1 class="principal">Seletores HTML</h1>	
+h1{
+   color: blue							<h2> class </h2>
+}
+								CSS;
+h1#principal{							h1.principal{
+   text-align: center;						   text-align: center;
+   color: aqua;							   color: aqua;
+}								}
+
+Diferença de class para id;
+O id sempre ira sobrepor class se estiverem na mesma tag, porem você não deve colocar o mesmo id para duas ou mais da mesma tag. exemplo;
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+<h1 id="principal">Seletores</h1>
+ERRADO
+<h1 id="principal">Seletores2</h1>
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+Mas você pode fazer isso com class. você pode tambem adicionar em diferentes tags. e com mais de um seletor por tag. exemplo;
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+<h1 class="principal">Seletores HTML</h1>
+CERTO
+<p class="principal destaque">Lorem</p>
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+===========================================================================================
+
+

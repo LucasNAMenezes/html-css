@@ -1,0 +1,47 @@
+10:28 23/08/2023
+
+Tipografia;
+Cada frase tem seu significado e importancia, frases com significados e importancias diferentes tem diferentes tipografias ou fontes para emitir as emoções certas. 
+
+medidas das fontes;
+
+siglas:
+px=pixels, cm=centimetros, mm=milimetros, in=inches/polegadas, pt=pontosWord, em=tamanho do M
+ex=tamanho do x, rem=tamanho rooteado do x, vw=view width, vh=view height
+
+Medida default: 16px = 1em
+
+Medidas absolutas: 
+cm, mm, in, px, pt, pc
+            
+Medidas relativas:
+em, ex, rem, vw, vh, %
+            
+Medidas recomendadas para font-size:
+px, em
+
+peso da fonte/negrito;
+
+font-weight:lighter, normal, bold, bolder
+font-weight:100, 200, 300, 400, 600, 700, 800, 900
+
+fonte em italico;
+
+font-style: italic;
+
+codigo de fonte
+/*
+font-weight: bolder;
+font-family: arial, helvetica, sans-serif;
+font-style: italic;
+font-size: 2em
+*/
+
+shorthand font // otimizaçao de codigo
+
+font-style -> font-weight -> font-size -> font-family
+===
+font: italic bolder 2em arial, helvetica, sans-serif;
+
+Essa é a ordem correta, você pode tirar alguns componentes, por exemplo, font-style, é só não digitar nada e ele vai para o proximo codigo.
+

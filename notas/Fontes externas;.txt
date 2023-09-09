@@ -1,0 +1,37 @@
+Fontes externas;
+Fontes externas podem ser obtidas de tres modos
+
+Google fonts (site de fontes gratis do google):
+copiar o import e colocar na primeira linha de style css
+ex:
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');       <--codigo de importação pego no site do google--
+
+</style>
+
+fontes baixadas:
+Baixar o arquivo da fonte em algum site confiavel (google fonts, dafont, etc.) 
+colocar o arquivo no css com a tag @font-face 
+ex:
+<style>
+
+@font-face {
+	font-family: 'Vegapunk'; <--nome da fonte (nome da sua preferencia) 
+	src: url('Vegapunk-FREE.otf') <--nome do arquivo-- format('opentype'); <--formato do arquivo--
+	font-weight:normal;
+	font-style:normal;
+}
+
+</style>
+
+formatos:
+-opentype (otf)
+-truetype (ttf)
+-embedded-opentype
+-truetype-aat(apple advanced typography)
+-svg
+
+certos navegadores podem não ser compativeis com certos formatos então certifique-se de colocar a maioria de formatos de um arquivo possiveis.
+
+src: url('Vegapunk-FREE.otf') format('opentype'), url('Vegapunk-FREE.ttf') format('truetype');

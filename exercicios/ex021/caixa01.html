@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixas</title>
+    <style>
+        h1{
+            background-color: bisque;
+            height: 300px;
+            width: 300px;
+            
+
+            border: 30px groove rgb(250, 180, 4);
+            /*Versão simplificada (shorthand)^^^^^^
+            border-width: 30px;
+            border-style: groove;
+            border-color: rgb(250, 180, 4);
+            */
+
+            padding: 10px;
+            /*Se os quatro valores forem iguais você pode informa-los apenas uma vez
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-left: 10px;
+            padding-bottom: 10px;
+            */
+
+            margin: 40px auto;
+            /*Se você colocar apenas dois valores eles serão respectivamente cima baixo(40px), e direita esquerda(auto) como você pode ver abaixo
+            margin-top: 40px;
+            margin-right: auto;
+            margin-bottom: 40px;
+            margin-left: auto;
+            */
+
+            outline: 5px dashed salmon;
+            /*
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: salmon;
+            */
+        }
+
+        a{
+            border-width: 10px;
+            border-style:groove;
+            border-color:rgb(255, 191, 0);
+
+            
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-left: 10px;
+            padding-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Paragrafos tambem são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona.</p>
+</body>
+</html>

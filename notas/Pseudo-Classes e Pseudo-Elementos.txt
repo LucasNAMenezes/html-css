@@ -1,0 +1,61 @@
+Pseudo-Classes e Pseudo-Elementos;
+
+pseudo-classes = :
+pseudo-elementos = ::
+children = >
+
+Pseudo-Classes são classes que ja existem por padrão no CSS e são acessadas com ":"
+
+Você pode afiliar tags dentro das div´s e usar as pseudo-classes (nesse caso a hover) com ">" para esconder coisas dentro de um texto ou caixa. exemplo;
+
+    <style>
+        div > p{
+            display: none;
+        }
+        div:hover{
+            color: red;
+
+        }
+        div:hover >p{
+            display:block;
+            color:white;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de hover</h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div>
+        Passe o mouse aqui
+        <p>TEXTO ESCONDIDO...</p>
+    </div>
+</body>
+
+Exercicio: estudos > ex020 > hover.html
+
+==================
+
+Pseudo-Elementos;
+Pseudo-Elementos são elementos que você pode introduzir do CSS para o HTML com "::" 
+
+        a::before{
+            content: "☞ ";
+        }
+
+        a::after{
+            content: " ☜";
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io">Repositorio GitHub</a></li>
+        <li><a href="https://youtube.com/cursoemvideo/">Canal do Youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com">Site do CursoEmVideo</a></li>
+    </ul>
+</body>
+
+Exercicio: estudos > ex020 > links.html

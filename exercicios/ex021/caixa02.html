@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: rgb(255, 168, 153);
+            
+        }
+        header{
+            background-color: rgb(165, 99, 99);
+            padding:10px;
+            margin:10px;
+            box-shadow:5px 5px 5px rgba(0, 0, 0, 0.47);
+            border-radius:10px;
+        }
+        nav{
+            background-color: rgb(135, 66, 107);
+            padding:5px;
+            text-align: center;
+            border-radius:5px;
+        }
+        nav > a{
+            margin: 10px;
+            color:rgb(209, 233, 255);
+            text-decoration:none;
+            
+        }
+        main{
+            background-color: wheat;
+            padding:10px;
+            margin:10px;
+            box-shadow:5px 5px 10px rgba(0, 0, 0, 0.47);
+            border-radius:20px 0px;
+        }
+        footer{
+            background-color: rgb(65, 0, 0);
+            color:white;
+            padding:1px;
+            margin: 0px;
+            text-align: center;
+            box-shadow:5px 5px 10px rgba(0, 0, 0, 0.278);
+            border-radius:5px;
+        }
+        article{
+            background-color: rgb(224, 199, 172);
+            padding:5px;
+            border-radius:10px;
+        }
+        article > aside{
+            background-color: rgb(176, 133, 159);
+            
+        }
+        div#bola{
+            height: 100px;
+            width:100px;
+            
+            border-radius:50%;
+            background-color: rgba(255, 255, 255, 0.115);
+            margin:auto;
+            margin-top:20px;
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Esportes</a>
+            <a href="#">Tecnologia</a>
+            <a href="#">Receitas</a>
+            <a href="#">Jogos</a>
+            <a href="#">Noticias</a>
+            <a href="#">Politica</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Esportes Politica e Tecnologia</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticias sobre brasil</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo doloremque quod qui cumque fugiat molestias nostrum libero suscipit omnis fuga consequuntur quis laboriosam fugit unde, repellat quae labore blanditiis dolor.</p>
+                <aside>
+                    <p>Artígo escrito por José da Silva</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        &copy;LuMen
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>
