@@ -1,0 +1,48 @@
+Estudando tabelas ex 023
+
+Hierarquia de tabelas:
+TABLE = tabela
+	TABLE ROW = linha de tabela
+		TABLE HEADER = cabeçalho de tabela
+		TABLE DATA = dado de tabela
+
+Se a hierarquia não for obedecida, os dados aparecerão antes ou depois da tabela.
+
+Alinhamento Horizontal:
+text-align: center, right, left;
+
+Alinhamento vertical:
+vertical-align: top, middle, bottom;
+
+ANATOMIA PARA TABELAS GRANDES;
+        TABLE 
+            CAPTION
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+
+TH = titulo    SCOPE:ROW = linha; ROWGROUP = conjunto de linhas; COL = coluna; COLGROUP = conjunto de colunas
+TD = dado
+
+Sempre use scope no TH
+
+Mesclagem de Células;
+	    <td rowspan="2">A</td>
+            <td colspan="2">B</td>
+
+rowspan = quantas linhas possui ex;
+linha1
+linha2
+linha3
+
+colspan = quantas colunas possui ex;
+col1    col2     col3
+
+Para Tabelas responsivas;
+Envelopar a tabela inteira em uma div, e usar;
+{overflow-x:auto;} = rolagem horizontal 
+{overflow-y:auto;} = rolagem vertical 
+{overflow:auto;} = rolagem horizontal e vertical
